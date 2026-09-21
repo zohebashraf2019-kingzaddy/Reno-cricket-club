@@ -1,0 +1,1 @@
+Add clean committee member portrait JPG/PNG files here, then set each img path in index.html.

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Reno Cricket Club official website. Cricket in Reno and Greater Northern Nevada.">
+<title>Reno Cricket Club | Cricket Unites Us All</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#07182f;--navy2:#0b2445;--red:#a20f18;--red2:#d31c2a;--cream:#f7f3eb;--white:#fff;--muted:#64748b;--line:#dce2e9;--shadow:0 18px 60px rgba(7,24,47,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,Arial,sans-serif;color:var(--navy);background:#fff}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1180px,calc(100% - 40px));margin:auto}
+.topbar{background:var(--navy);color:#fff;font-size:13px}.topbar .container{display:flex;justify-content:space-between;gap:20px;padding:9px 0}.topbar a{opacity:.9}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(7,24,47,.08)}nav{height:82px;display:flex;align-items:center;gap:30px}.brand{display:flex;align-items:center;gap:12px;margin-right:auto}.brand img{width:62px;height:62px;object-fit:contain}.brand b{font-size:18px}.brand span{display:block;font-size:11px;letter-spacing:1.8px;color:var(--red);font-weight:800}.links{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:700}.links a:hover{color:var(--red)}.navbtn,.btn{border:0;border-radius:999px;padding:13px 19px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}.navbtn,.btn-red{background:var(--red);color:#fff}.btn-dark{background:var(--navy);color:#fff}.btn-light{background:#fff;color:var(--navy)}.hamb{display:none;background:none;border:0;font-size:28px}
+.live{display:none;background:#9f1019;color:#fff}.live.show{display:block}.live .container{display:flex;align-items:center;justify-content:center;gap:13px;padding:10px}.pulse{width:9px;height:9px;background:#fff;border-radius:50%;box-shadow:0 0 0 0 rgba(255,255,255,.7);animation:pulse 1.5s infinite}@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}.live a{text-decoration:underline;font-weight:800}
+.hero{min-height:690px;position:relative;overflow:hidden;background:linear-gradient(105deg,rgba(3,17,35,.98) 0%,rgba(3,17,35,.90) 46%,rgba(3,17,35,.3) 100%),url('https://static.wixstatic.com/media/2a6caa_5315f3eaf2cd488cb22303a7932c85da~mv2.jpg') center/cover;color:#fff;display:flex;align-items:center}.hero:after{content:"";position:absolute;right:-120px;bottom:-230px;width:540px;height:540px;border:80px solid rgba(255,255,255,.06);border-radius:50%}.hero .content{position:relative;z-index:2;max-width:730px;padding:100px 0}.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:800;color:#d8b8b8}.hero h1,.section-title{font-family:Teko,sans-serif;text-transform:uppercase;line-height:.92;margin:16px 0}.hero h1{font-size:clamp(62px,9vw,118px);letter-spacing:-2px}.hero p{max-width:640px;font-size:18px;line-height:1.75;color:#e7edf5}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-stats{display:flex;gap:34px;margin-top:55px}.hero-stats strong{display:block;font-size:27px}.hero-stats span{font-size:12px;color:#b9c5d5}
+section{padding:95px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:38px}.section-title{font-size:58px}.section-head p{max-width:600px;color:var(--muted);line-height:1.75}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:58px;align-items:center}.about-art{min-height:490px;border-radius:28px;overflow:hidden;position:relative;background:url('https://static.wixstatic.com/media/2a6caa_5315f3eaf2cd488cb22303a7932c85da~mv2.jpg') center/cover;box-shadow:var(--shadow)}.about-art .stamp{position:absolute;right:20px;bottom:20px;background:#fff;padding:18px;border-radius:18px;width:180px;text-align:center;font-weight:800}.about-copy p{color:#526071;line-height:1.8}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}.check{padding:15px;border:1px solid var(--line);border-radius:14px;font-weight:700}
+.tournaments{background:var(--cream)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border-radius:22px;padding:28px;border:1px solid #e9e5dd;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.card .num{font-family:Teko;font-size:50px;color:#d9c8c8}.card h3{font-size:22px;margin:8px 0}.card p{color:var(--muted);line-height:1.65}.card a{color:var(--red);font-weight:800}
+.committee{background:var(--navy);color:#fff}.committee .section-head p{color:#aebbd0}.people{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.person{background:#102a4e;border:1px solid rgba(255,255,255,.1);border-radius:20px;overflow:hidden;cursor:pointer;transition:.25s}.person:hover{transform:translateY(-5px);background:#14345f}.person .photo{height:265px;background:linear-gradient(135deg,#17385f,#0a1d38);display:grid;place-items:center;overflow:hidden}.person .photo img{width:100%;height:100%;object-fit:cover}.person .initials{font-family:Teko;font-size:76px;color:#8193ac}.person .body{padding:19px}.person h3{margin:0 0 5px}.person p{margin:0;color:#aebbd0;font-size:13px}.person small{display:block;color:#e7bdc0;margin-top:12px;font-weight:700}
+.sponsors{background:#fff}.sponsor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.sponsor{border:1px solid var(--line);border-radius:20px;padding:26px;min-height:230px;display:flex;flex-direction:column}.sponsor.featured{border:2px solid var(--red);position:relative}.tag{position:absolute;right:18px;top:18px;background:#f5e6e7;color:var(--red);font-size:11px;font-weight:800;padding:7px 10px;border-radius:99px}.sponsor h3{font-size:22px}.sponsor p{color:var(--muted);line-height:1.6;font-size:14px}.sponsor a{margin-top:auto;font-weight:800;color:var(--red)}
+.social-band{background:var(--red);color:#fff;padding:34px 0}.social-band .container{display:flex;justify-content:space-between;align-items:center;gap:25px}.socials{display:flex;flex-wrap:wrap;gap:10px}.socials a{border:1px solid rgba(255,255,255,.45);padding:10px 14px;border-radius:999px;font-weight:700}
+.join{background:#f6f8fb}.formwrap{display:grid;grid-template-columns:.75fr 1.25fr;background:#fff;border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}.formintro{background:var(--navy);color:#fff;padding:45px}.formintro h2{font-family:Teko;font-size:55px;line-height:1;margin:0 0 20px}.formintro p{color:#bdc9d8;line-height:1.7}.form{padding:42px;display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800}.field input,.field select,.field textarea{border:1px solid #cfd7e1;border-radius:12px;padding:13px;background:#fbfcfd}.field textarea{min-height:120px;resize:vertical}
+footer{background:#041123;color:#fff;padding:60px 0 25px}.foot{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:40px}.foot p,.foot a{color:#aebbd0;line-height:1.8}.foot h4{margin-top:0}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:20px;color:#7f91aa;font-size:12px}
+.modal{display:none;position:fixed;inset:0;background:rgba(1,9,20,.78);z-index:100;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modalbox{background:#fff;max-width:720px;width:100%;max-height:88vh;overflow:auto;border-radius:24px;padding:34px;position:relative}.close{position:absolute;right:20px;top:16px;border:0;background:#eef1f5;width:38px;height:38px;border-radius:50%;font-size:22px}.modalbox h2{margin-bottom:4px}.modalbox .role{color:var(--red);font-weight:800}.modalbox p{line-height:1.75;color:#526071}
+@media(max-width:900px){.links{display:none;position:absolute;top:82px;left:0;right:0;background:#fff;padding:25px 30px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.links.open{display:flex}.hamb{display:block}.about-grid,.formwrap{grid-template-columns:1fr}.people{grid-template-columns:repeat(2,1fr)}.cards,.sponsor-grid{grid-template-columns:1fr 1fr}.hero{min-height:620px}.hero-stats{gap:18px;flex-wrap:wrap}}
+@media(max-width:600px){.container{width:min(100% - 28px,1180px)}section{padding:70px 0}.topbar .container{justify-content:center}.topbar span:last-child{display:none}.brand b{font-size:15px}.brand img{width:52px;height:52px}nav{height:70px}.links{top:70px}.hero h1{font-size:62px}.hero .content{padding:75px 0}.hero-stats{display:grid;grid-template-columns:1fr 1fr}.section-title{font-size:46px}.section-head{display:block}.about-grid{gap:30px}.about-art{min-height:340px}.checks,.cards,.people,.sponsor-grid,.form{grid-template-columns:1fr}.form{padding:26px}.person .photo{height:330px}.social-band .container,.foot{display:block}.socials{margin-top:20px}.foot>div{margin-bottom:30px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>🏏 Serving Reno & Greater Northern Nevada</span><span>✉ renocricketclub@gmail.com &nbsp; • &nbsp; Mira Loma Park, Reno, NV</span></div></div>
+<header><div class="container"><nav>
+<a class="brand" href="#home"><img src="assets/rcc-logo.jpeg" alt="Reno Cricket Club logo"><div><b>RENO CRICKET CLUB</b><span>CRICKET UNITES US ALL</span></div></a>
+<div class="links" id="navLinks"><a href="#about">About</a><a href="#tournaments">Tournaments</a><a href="#committee">Committee</a><a href="#sponsors">Sponsors</a><a href="https://cricclubs.com/RenoCricketClub" target="_blank">Scores</a><a href="#join">Join RCC</a><a class="navbtn" href="https://www.youtube.com/@renocricketclub" target="_blank">Watch RCC</a></div>
+<button class="hamb" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav></div></header>
+
+<!-- Set LIVE_MATCH to true below when RCC is streaming. Change LIVE_URL to the exact live YouTube video if available. -->
+<div class="live" id="liveBanner"><div class="container"><span class="pulse"></span><strong>RCC IS LIVE</strong><span>Watch today's match on YouTube</span><a id="liveLink" target="_blank">WATCH LIVE →</a></div></div>
+
+<main>
+<section class="hero" id="home"><div class="container"><div class="content">
+<div class="eyebrow">Official Home of Reno Cricket Club</div><h1>CRICKET<br>UNITES US ALL.</h1>
+<p>A thriving cricket community for players, families, volunteers and supporters across Reno and Greater Northern Nevada.</p>
+<div class="hero-actions"><a class="btn btn-red" href="#join">Join the Club</a><a class="btn btn-light" href="https://cricclubs.com/RenoCricketClub" target="_blank">Fixtures & Scores</a><a class="btn btn-light" href="https://www.youtube.com/@renocricketclub" target="_blank">▶ YouTube</a></div>
+<div class="hero-stats"><div><strong>2026</strong><span>SEASON</span></div><div><strong>111+</strong><span>RPL 10 REGISTERED PLAYERS</span></div><div><strong>3</strong><span>SEASON TOURNAMENT WINDOWS</span></div><div><strong>1</strong><span>CRICKET COMMUNITY</span></div></div>
+</div></div></section>
+
+<section id="about"><div class="container"><div class="about-grid">
+<div class="about-art"><div class="stamp">RENO • NEVADA<br>🏏 RCC</div></div>
+<div class="about-copy"><div class="eyebrow" style="color:var(--red)">About Reno Cricket Club</div><h2 class="section-title">MORE THAN A SPORT.</h2>
+<p>Reno Cricket Club is the heartbeat of cricket in the Reno area and Greater Northern Nevada. We welcome players of different ages, backgrounds and skill levels while building a culture centered on sportsmanship, community involvement and the growth of cricket.</p>
+<p>Our community reflects roots from India, the United States, Pakistan, Bangladesh, Sri Lanka, Afghanistan and beyond. RCC works to make cricket a unifying force in Northern Nevada through organized competition, volunteering, community engagement and responsible club governance.</p>
+<div class="checks"><div class="check">✓ Community first</div><div class="check">✓ Player development</div><div class="check">✓ Sportsmanship</div><div class="check">✓ Volunteer powered</div></div>
+<a class="btn btn-dark" href="#committee">Meet the 2026 Committee</a>
+</div></div></div></section>
+
+<section class="tournaments" id="tournaments"><div class="container">
+<div class="section-head"><div><div class="eyebrow" style="color:var(--red)">Play • Compete • Connect</div><h2 class="section-title">2026 TOURNAMENTS</h2></div><p>RCC's season includes Reno Premier League competition in spring and fall plus a summer leather-ball tournament. Use CricClubs for club competition information and RCC's official site for registration updates.</p></div>
+<div class="cards">
+<div class="card"><div class="num">01</div><h3>RPL Spring</h3><p>Reno Premier League spring competition. Player registration and season information are published through RCC.</p><a href="https://www.renocricketclub.org/" target="_blank">Registration updates →</a></div>
+<div class="card"><div class="num">02</div><h3>Summer Leather Ball</h3><p>Summer leather-ball tournament bringing local players together for competitive cricket in Northern Nevada.</p><a href="https://cricclubs.com/RenoCricketClub" target="_blank">Club hub →</a></div>
+<div class="card"><div class="num">03</div><h3>RPL Fall</h3><p>Reno Premier League returns in fall. Follow RCC social channels and CricClubs for current schedules and results.</p><a href="https://cricclubs.com/RenoCricketClub" target="_blank">Fixtures & scores →</a></div>
+</div></div></section>
+
+<section class="committee" id="committee"><div class="container">
+<div class="section-head"><div><div class="eyebrow">Leadership</div><h2 class="section-title">2026 COMMITTEE</h2></div><p>Click a committee member to read a short role biography. Replace the placeholder portrait areas with the original committee photos in <b>assets/committee/</b> whenever you have the source images.</p></div>
+<div class="people" id="people"></div>
+</div></section>
+
+<section class="sponsors" id="sponsors"><div class="container">
+<div class="section-head"><div><div class="eyebrow" style="color:var(--red)">Community Partners</div><h2 class="section-title">SPONSORS & PARTNERS</h2></div><p>Local organizations help RCC improve programs, support tournaments, purchase equipment and expand community outreach.</p></div>
+<div class="sponsor-grid">
+<div class="sponsor featured"><span class="tag">FEATURED SUPPORTER</span><h3>Tribe Salon</h3><p>A long-time RCC supporter contributing meeting space, match-day support, cricket equipment, awards and community involvement.</p><a href="https://www.tribesalonreno.com" target="_blank">Visit Tribe Salon →</a></div>
+<div class="sponsor"><h3>High Quality Organics</h3><p>Organic ingredient company with roots in organic agriculture and wholesale sourcing of herbs, botanicals, spices, teas and grains.</p><a href="https://hqorganics.com" target="_blank">Visit HQO →</a></div>
+<div class="sponsor"><h3>7 Spices Indian Restaurant</h3><p>Indian restaurant serving the Sparks community with traditional flavors, fresh ingredients and a range of classic dishes.</p><a href="https://7-spicesindiancuisine.com" target="_blank">Visit 7 Spices →</a></div>
+<div class="sponsor"><h3>The Newtron Group</h3><p>Previous RCC sponsor and specialty electrical construction, industrial electrical, instrumentation and automation provider.</p><a href="https://www.thenewtrongroup.com" target="_blank">Visit Newtron →</a></div>
+<div class="sponsor"><h3>Bawarchi Sparks</h3><p>Previous RCC sponsor serving Indian cuisine in Sparks with a focus on fresh ingredients and flavorful meals.</p><a href="https://bawarchisparks.com" target="_blank">Visit Bawarchi →</a></div>
+<div class="sponsor" style="background:var(--cream)"><h3>Become an RCC Sponsor</h3><p>Opportunities can include team sponsorship, tournament sponsorship, jersey branding, website/social promotion and event recognition.</p><a href="mailto:renocricketclub@gmail.com?subject=RCC%20Sponsorship%20Inquiry">Contact RCC →</a></div>
+</div></div></section>
+
+<div class="social-band"><div class="container"><div><b>FOLLOW RENO CRICKET CLUB</b><br><small>Highlights, announcements, live cricket and community updates.</small></div><div class="socials"><a href="https://www.instagram.com/reno_cricket_club/" target="_blank">Instagram</a><a href="https://www.facebook.com/RenoCricketClub/" target="_blank">Facebook</a><a href="https://www.youtube.com/@renocricketclub" target="_blank">YouTube</a><a href="https://cricclubs.com/RenoCricketClub" target="_blank">CricClubs</a></div></div></div>
+
+<section class="join" id="join"><div class="container"><div class="formwrap">
+<div class="formintro"><div class="eyebrow">Get Involved</div><h2>HELP RCC<br>GROW.</h2><p>Interested in playing, volunteering, umpiring, supporting or becoming a member? Send RCC your information and the club can follow up.</p><p><b>Home ground:</b><br>Mira Loma Park<br>South McCarran Boulevard<br>Reno, Nevada</p></div>
+<form class="form" action="mailto:renocricketclub@gmail.com" method="post" enctype="text/plain">
+<div class="field"><label>FIRST NAME</label><input name="First Name" required></div><div class="field"><label>EMAIL</label><input type="email" name="Email" required></div>
+<div class="field"><label>PHONE</label><input name="Phone"></div><div class="field"><label>TOURNAMENT</label><input name="Tournament" placeholder="RPL Spring, Summer, RPL Fall"></div>
+<div class="field full"><label>YOUR ROLE</label><select name="Role"><option>Player</option><option>Captain</option><option>Umpire</option><option>Volunteer</option><option>Supporter</option><option>Member</option><option>Other</option></select></div>
+<div class="field full"><label>SUGGESTIONS / MESSAGE</label><textarea name="Message" placeholder="Tell RCC how you'd like to get involved..."></textarea></div>
+<div class="field full"><button class="btn btn-red" type="submit">Send to Reno Cricket Club</button></div>
+</form></div></div></section>
+</main>
+
+<footer><div class="container"><div class="foot">
+<div><div class="brand"><img src="assets/rcc-logo.jpeg" alt=""><div><b>RENO CRICKET CLUB</b><span>CRICKET UNITES US ALL</span></div></div><p>Building cricket, community and connection across Reno and Greater Northern Nevada.</p></div>
+<div><h4>Club Links</h4><a href="#about">About RCC</a><br><a href="#committee">2026 Committee</a><br><a href="#sponsors">Sponsors</a><br><a href="https://cricclubs.com/RenoCricketClub" target="_blank">CricClubs</a></div>
+<div><h4>Contact</h4><a href="mailto:renocricketclub@gmail.com">renocricketclub@gmail.com</a><p>Mira Loma Park<br>Reno, Nevada</p></div>
+</div><div class="copyright">© 2026 Reno Cricket Club. Official club website concept. Content can be edited directly in index.html.</div></div></footer>
+
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="modalbox"><button class="close" onclick="closeModal()">×</button><h2 id="mName"></h2><div class="role" id="mRole"></div><p id="mBio"></p><div id="mContact"></div></div></div>
+
+<script>
+const LIVE_MATCH = false;
+const LIVE_URL = "https://www.youtube.com/@renocricketclub";
+if(LIVE_MATCH){document.getElementById("liveBanner").classList.add("show");document.getElementById("liveLink").href=LIVE_URL;}
+
+const committee=[
+{name:"Rahul Saha",role:"President",img:"",bio:"The President serves as a coordination and integration lead within the Executive Committee, helping ensure RCC people, processes and activities are aligned. The role connects executive portfolios, supports collaboration and reinforces alignment with Board-approved direction, policies and standard operating procedures."},
+{name:"Shiva Selvaraju Nandhakumar",role:"Secretary",img:"",bio:"The Secretary supports RCC by accurately capturing and maintaining official records, meeting outcomes and club documentation. The role safeguards institutional memory and supports transparency, continuity and accountability, including minutes, registers, document versioning and leadership handover.",email:"shivanandha2013@gmail.com",phone:"979-344-8162"},
+{name:"Deepak Raju",role:"Activity Coordinator",img:"",bio:"The Activity Coordinator strengthens member engagement by planning non-match and non-tournament activities such as social gatherings, orientation sessions, informal meetups and recreational cricket activities. The role coordinates logistics, volunteers and communication with RCC leadership.",email:"deepakchanderr@gmail.com",phone:"859-693-4637"},
+{name:"Dominic Savio",role:"Equipment Coordinator",img:"",bio:"The Equipment & Assets Coordinator manages club equipment, uniforms and physical assets so they are organized, maintained and available for matches, tournaments and activities. Responsibilities include inventory, condition monitoring, logistics, equipment planning and continuity.",email:"Dominsavio29@gmail.com",phone:"775-440-9984"},
+{name:"Abhilash Putta",role:"Director of Finance & Public Relations",img:"",bio:"This role oversees financial planning, revenue activities, compliance, financial transparency and risk management while also supporting public relations, sponsorships, facilities, community relationships, website communications and RCC branding.",email:"Abhilash.putta@gmail.com",phone:"408-390-4958"},
+{name:"Sivakumar Lanka",role:"Director of Operations",img:"",bio:"The Director of Operations supports governance and oversight, chairs Board and Executive Committee meetings, acts as a liaison between leadership groups, supports fair election processes and helps keep club operations aligned with RCC's mission and governance requirements.",email:"sivakumarlanka@gmail.com",phone:"775-997-6851"},
+{name:"Sanjay Bhageerathan",role:"Director of Policy & Documentation",img:"",bio:"The Director of Policy & Documentation maintains policies, procedures, the Code of Conduct, waivers and governance records. The role supports legal and documentation compliance, audit preparation, risk management and organized access to official club information.",phone:"775-219-4923"}
+];
+const people=document.getElementById("people");
+committee.forEach((p,i)=>{let initials=p.name.split(" ").map(x=>x[0]).slice(0,2).join("");people.innerHTML+=`<article class="person" onclick="openPerson(${i})"><div class="photo">${p.img?`<img src="${p.img}" alt="${p.name}">`:`<span class="initials">${initials}</span>`}</div><div class="body"><h3>${p.name}</h3><p>${p.role}</p><small>READ BIO →</small></div></article>`});
+function openPerson(i){let p=committee[i];mName.textContent=p.name;mRole.textContent=p.role;mBio.textContent=p.bio;mContact.innerHTML=(p.email?`<a href="mailto:${p.email}">✉ ${p.email}</a><br>`:"")+(p.phone?`<a href="tel:${p.phone}">☎ ${p.phone}</a>`:"");modal.classList.add("open")}
+function closeModal(){modal.classList.remove("open")}document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+</script>
+</body></html>
